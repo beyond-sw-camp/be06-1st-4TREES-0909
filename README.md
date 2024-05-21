@@ -100,8 +100,9 @@
 - Replication 구성을 통한 데이터 동기화
 
 ---
-
-##  📋ERD
+## 📄 요구사항 정의서
+<a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki">요구사항 정의서</a>
+## 📋 ERD
 
 <div align="center">
 <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/66f992d1-5753-420d-8081-fee692fb5591" style="zoom: 50%"></img>

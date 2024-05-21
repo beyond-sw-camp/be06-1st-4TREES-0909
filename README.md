@@ -18,8 +18,6 @@
 
 <br>
 
----
-
 ## 📌 프로젝트 주제
 
 ### 1-1 프로젝트 개요
@@ -78,7 +76,6 @@
 <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white">
 
----
 
 ## 🖥️ 시스템 아키텍처
 
@@ -99,19 +96,15 @@
   <br></br>
 - Replication 구성을 통한 데이터 동기화
 
----
 ## 📄 요구사항 정의서
 <a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki">요구사항 정의서</a>
 
----
 
 ## 📋 ERD
 
 <div align="center">
 <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/66f992d1-5753-420d-8081-fee692fb5591" style="zoom: 50%"></img>
 </div>
-
----
 
 ## ✨ DR(재난 복구)
 
@@ -123,7 +116,6 @@
   <br></br>
 - 다운된 서버 재 활성화
 
----
 
 ## SQL 실행 결과
 

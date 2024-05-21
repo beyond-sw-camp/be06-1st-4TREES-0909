@@ -83,7 +83,7 @@
 ## 🖥️ 시스템 아키텍처
 
 <div align="center">
-<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/7e567c20-94e0-429a-924d-411cc6a7b35d" style="zoom: 50%"></img>
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/ba3469c1-3044-4b2f-96db-5779d2af2aca" style="zoom: 50%"></img>
 </div>
 
 ### 예상 문제상황
@@ -99,6 +99,13 @@
   <br></br>
 - Replication 구성을 통한 데이터 동기화
 
+---
+
+##  📋ERD
+
+<div align="center">
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/69d21f16-a7a7-4840-986b-962bfaadee7a" style="zoom: 50%"></img>
+</div>
 
 ---
 

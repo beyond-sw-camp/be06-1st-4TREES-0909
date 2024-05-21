@@ -104,7 +104,7 @@
 ##  📋ERD
 
 <div align="center">
-<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/69d21f16-a7a7-4840-986b-962bfaadee7a" style="zoom: 50%"></img>
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/66f992d1-5753-420d-8081-fee692fb5591" style="zoom: 50%"></img>
 </div>
 
 ---

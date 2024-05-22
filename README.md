@@ -86,7 +86,7 @@
 ## 🖥️ 시스템 아키텍처
 
 <div align="center">
-<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/ba3469c1-3044-4b2f-96db-5779d2af2aca" style="zoom: 50%"></img>
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/5f2eb344-23ed-4348-987e-7037cacf735d"></img>
 </div>
 
 ### 예상 문제상황
@@ -110,7 +110,7 @@
 
 - Wiki: <a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki#4trees-erd-0909-%EC%84%9C%EB%B9%84%EC%8A%A4">ERD</a>
 <div align="center">
-<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/66f992d1-5753-420d-8081-fee692fb5591" style="zoom: 50%"></img>
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/69503955/bcfb63d3-44ba-4b8a-b45b-08609fb9a263" style="zoom: 50%"></img>
 
 </div>
 
@@ -145,7 +145,7 @@ VALUES
 ```
 
 <figure align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/82444759/332692428-f380ffa3-afec-4792-acf9-cd1ef131d363.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T071913Z&X-Amz-Expires=300&X-Amz-Signature=8d2dd28a3164787ad3a87a083b24b0258425eafa3d6f91d9b26fa829f9cd47f2&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/f380ffa3-afec-4792-acf9-cd1ef131d363"/>
     <p>일반 유저 회원가입</p>
  </figure>
 </div>
@@ -165,7 +165,7 @@ values
 
 <figure align="center">
 
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/82444759/332693008-0fbe158f-0e20-43b4-999b-793675e9393a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T071404Z&X-Amz-Expires=300&X-Amz-Signature=9db29753de611951a511c98f6c07746b6e4bfff688a646d4a52ab941c22aeb88&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/0fbe158f-0e20-43b4-999b-793675e9393a"/>
     <p>업체 유저 회원가입</p>
  </figure>
 </div>
@@ -223,7 +223,7 @@ VALUES
 
 <figure align="center"> 
 
-  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/563e12e8-d7af-4224-aedc-654ebb337b46"/>
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/f57f553c-df9b-412b-b39b-335d9f2242c5"/>
     <p>결제 수단 추가</p>
  </figure>
 </div>
@@ -282,7 +282,7 @@ WHERE gpby_status = "진행";
 
 <figure align="center"> 
 
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/167496262/332705531-499effe0-1e0d-4476-93ce-815972cfe027.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T074416Z&X-Amz-Expires=300&X-Amz-Signature=a29fda6fe22fe2c612a852f593dacbff3c4e5fb895dfcfdb06cf522de7aee63b&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/499effe0-1e0d-4476-93ce-815972cfe027"/>
     <p>입찰이 끝나고 모집 진행중인 공구 조회</p>
  </figure>
 </div>
@@ -463,4 +463,4 @@ WHERE product_idx = 5 AND user_idx = 1;
 
 
 - SP
-![image](https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/90a274f9-2de6-40de-a7cf-856f6b901e52)
+![image](https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/74596b10-86dc-47ba-a490-fb49fe5973a4)

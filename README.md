@@ -86,7 +86,7 @@
 ## 🖥️ 시스템 아키텍처
 
 <div align="center">
-<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/ba3469c1-3044-4b2f-96db-5779d2af2aca" style="zoom: 50%"></img>
+<img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/5f2eb344-23ed-4348-987e-7037cacf735d"></img>
 </div>
 
 ### 예상 문제상황
@@ -145,7 +145,7 @@ VALUES
 ```
 
 <figure align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/82444759/332692428-f380ffa3-afec-4792-acf9-cd1ef131d363.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T071913Z&X-Amz-Expires=300&X-Amz-Signature=8d2dd28a3164787ad3a87a083b24b0258425eafa3d6f91d9b26fa829f9cd47f2&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/f380ffa3-afec-4792-acf9-cd1ef131d363"/>
     <p>일반 유저 회원가입</p>
  </figure>
 </div>

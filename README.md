@@ -18,16 +18,14 @@
 
 <br>
 
----
-
 ## 📌 프로젝트 주제
 
-### 1. 프로젝트 개요
+### 1-1 프로젝트 개요
 >'직접 모집, 업체간 경쟁 입찰'이라는 방식으로
 > 구매자가 주도하는 능동적인 형태의 공동구매 서비스
 
 
-### 2. 프로젝트 배경
+### 1-2 프로젝트 배경
 
 최근 코로나 사태 이후 높은 물가가 지속되어 소비자들의 구매욕구가 낮아지고 있다.
 이에 따라 각종 커머스 업체들은 무료배송 요건 충족 및 할인 등을 내걸고
@@ -46,7 +44,7 @@
 
 <div>
 
-### 3. 기존 공동구매의 문제점
+### 1-3 기존 공동구매의 문제점
 - 기존 플랫폼은 일반적인 커머스에서 구매자 숫자만 바뀌는 기존 커머스 플랫폼에 종속된 형태적 한계가 있음
 <br></br>
 - 업체간 투명한 경쟁을 막아 금액적, 품질적 마지노선이 플랫폼에 의해 정해지기 때문에 소비자들의 이익 실현이 방해 받음
@@ -64,21 +62,26 @@
 
 
 
-### 3. 서비스 흐름
+### 1-4 서비스 흐름
 <div align="center">
 <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/93fbc229-00ee-4c1c-8ce9-75094de61f9f" style="zoom: 60%"></img>
 </div>
 
----
-
 ## 📚 기술 스택
 
-&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=MariaDB&logoColor=white"/></a>
-&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Haproxy-6DB33F?style=flat&logo=haproxy&logoColor=white&color=green"/></a></a>
+### OS:
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black"/> <img src="https://img.shields.io/badge/Vmware-607078?style=flat&logo=Vmware&logoColor=white"/>  <img src="https://img.shields.io/badge/CentOS-262577?style=flat&logo=CentOS&logoColor=white"/>
+
+### DB:
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=MariaDB&logoColor=white"/>
+
+### Load Balancer:
+<img src="https://img.shields.io/badge/HAPROXY-blue?style=flat&logo=googlepubsub&logoColor=white"/>
+
+### VCS:
 <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white">
 
----
 
 ## 🖥️ 시스템 아키텍처
 
@@ -99,47 +102,71 @@
   <br></br>
 - Replication 구성을 통한 데이터 동기화
 
----
 ## 📄 요구사항 정의서
-<a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki">요구사항 정의서</a>
+- Wiki: <a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki#4trees-erd-0909-%EC%84%9C%EB%B9%84%EC%8A%A4">요구사항 정의서</a>
+
+
 ## 📋 ERD
 
+- Wiki: <a href="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/wiki#4trees-erd-0909-%EC%84%9C%EB%B9%84%EC%8A%A4">ERD</a>
 <div align="center">
 <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/66f992d1-5753-420d-8081-fee692fb5591" style="zoom: 50%"></img>
-</div>
 
----
+</div>
 
 ## ✨ DR(재난 복구)
 
-- 모니터링 시스템 및 Haproxy 로그, DB로그 분석을 통한 장애 감지 및 진단.
-<br></br>
-- HW,SW,네트워크등 문제 원인 파악 후 복구
-  <br></br>
-- 다운된 DB서버와 기존서버의 Replication 재설정을 통한 데이터 복제 및 동기화
-  <br></br>
-- 다운된 서버 재 활성화
+### 로그 분석
+> - Haproxy 로그, DB로그 분석을 통한 장애 감지 및 진단.
 
----
+### 문제 파악 및 복구
+> - HW,SW,네트워크등 문제 원인 파악 후 복구
 
-## SQL 실행 결과
+### Replication 재설정
+> - 다운된 DB서버와 기존서버의 Replication 재설정을 통한 데이터 복제 및 동기화
+
+### 재 활성화
+> - 다운된 서버 재 활성화
+
+
+## SQL 개발
+
+### 실행결과
 
 <details>
-<summary>일반 유저 회원 가입</summary>
+<summary>일반 유저 회원가입</summary>
 <div>
-<figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+```
+INSERT INTO USER
+(user_type, user_name, user_email, user_password, user_phone_number, user_birth, user_sex, user_point, user_status, user_email_status, user_phone_status)
+VALUES
+('inapp', '홍길동', 'hong1@gmail.com', 'qwer1234',' 010-1111-1111', '990111', '남', '0', '활동', true, true);
+```
+
+<figure align="center">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/82444759/332692428-f380ffa3-afec-4792-acf9-cd1ef131d363.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T071913Z&X-Amz-Expires=300&X-Amz-Signature=8d2dd28a3164787ad3a87a083b24b0258425eafa3d6f91d9b26fa829f9cd47f2&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+    <p>일반 유저 회원가입</p>
  </figure>
 </div>
 </details>
 
 <details>
-<summary>업체 유저 회원 가입</summary>
+<summary>업체 유저 회원가입</summary>
 <div>
-<figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+```
+INSERT INTO COMPANY
+(company_name, company_email, company_password, company_birth, company_sex, company_phone_number, company_address, company_account,company_bank,company_depo_name,company_reg_num,company_ip, company_email_status, company_phone_status)
+values
+('mathew', 'handsome@gmail.com', 'qwer1234', '1980-11-11', '남', '010-9223-3172', '4층 1강의실', '162478-12-142123', '부산은행', 'mathew', '127345222', '022220', true, true );
+
+```
+
+<figure align="center">
+
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/82444759/332693008-0fbe158f-0e20-43b4-999b-793675e9393a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T071404Z&X-Amz-Expires=300&X-Amz-Signature=9db29753de611951a511c98f6c07746b6e4bfff688a646d4a52ab941c22aeb88&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+    <p>업체 유저 회원가입</p>
  </figure>
 </div>
 </details>
@@ -147,9 +174,18 @@
 <details>
 <summary>일반 유저 로그인</summary>
 <div>
+
+```
+SELECT user_email, user_password 
+FROM USER 
+WHERE user_email = 'hong1@gmail.com';
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/681ac42d-8c89-4654-906e-0ea45282b9b6"/>
+    <p>email을 기준으로 조회</p>
  </figure>
 </div>
 </details>
@@ -157,9 +193,18 @@
 <details>
 <summary>업체 유저 로그인</summary>
 <div>
-<figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+```
+SELECT company_email , company_password
+FROM COMPANY
+WHERE company_email = 'dlflq11@gmail.com';
+
+```
+
+<figure align="center">
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/71d453b8-db0b-4fed-8bdb-c99eeb93035b"/>
+    <p>email을 기준으로 조회</p>
  </figure>
 </div>
 </details>
@@ -167,9 +212,19 @@
 <details>
 <summary>결제 수단 추가</summary>
 <div>
+
+```
+INSERT INTO PAYMENT_METHOD 
+(payment_method_idx, user_idx, payment_method_name, card_company, card_number, card_cvc, card_y_enddate, card_m_enddate, card_pwd) 
+VALUES 
+(4, 4, '국민카드', '국민', '6547-8915-7534-7878', '565', '25', '01', '9874');
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/563e12e8-d7af-4224-aedc-654ebb337b46"/>
+    <p>결제 수단 추가</p>
  </figure>
 </div>
 </details>
@@ -177,29 +232,99 @@
 <details>
 <summary>배송지 추가</summary>
 <div>
+
+```
+INSERT INTO `gonggu`.`ADDRESS` 
+(`address_info`, `user_idx`)
+VALUES 
+('서울특별시 동작구 장승배기로 171 404호', '1');
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/e9965693-edda-4494-be5c-b9120cbf76d6"/>
+    <p>배송지 추가</p>
  </figure>
 </div>
 </details>
 
 <details>
-<summary>공구 등록 및 조회</summary>
+<summary>공구 등록</summary>
 <div>
+
+```
+INSERT INTO GROUP_BUY
+(category_idx, user_idx, gpby_title, gpby_content, gpby_quantity) 
+VALUES 
+(2, 1, "딸기 1kg 선제좀", "맛있는 딸기 1kg 싸게 삽니다.", 20);
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/d9126147-3d62-4457-9cbc-633684742599"/>
+    <p>최초 공구 등록</p>
  </figure>
 </div>
 </details>
 
 <details>
-<summary>입찰 등록 및 입찰 대기 조회</summary>
+<summary>진행중인 공구 조회</summary>
 <div>
+
+```
+SELECT * 
+FROM GROUP_BUY 
+WHERE gpby_status = "진행";
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/167496262/332705531-499effe0-1e0d-4476-93ce-815972cfe027.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240522T074416Z&X-Amz-Expires=300&X-Amz-Signature=a29fda6fe22fe2c612a852f593dacbff3c4e5fb895dfcfdb06cf522de7aee63b&X-Amz-SignedHeaders=host&actor_id=69503955&key_id=0&repo_id=803080504"/>
+    <p>입찰이 끝나고 모집 진행중인 공구 조회</p>
+ </figure>
+</div>
+</details>
+
+
+<details>
+<summary>입찰 대기 조회</summary>
+<div>
+
+```
+SELECT gpby_title, gpby_content, gpby_status, user_name 
+FROM GROUP_BUY 
+LEFT JOIN USER ON GROUP_BUY.user_idx = USER.user_idx
+WHERE gpby_status = '입찰 대기';
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/18404542-50b0-4767-87f2-e2e81fd578bc"/>
+    <p>상태가 '입찰 대기'인 공구 조회</p>
+ </figure>
+</div>
+</details>
+
+<details>
+<summary>입찰 등록</summary>
+<div>
+
+```
+INSERT INTO `gonggu`.`BID` 
+(`product_idx`,`gpby_idx`, `bid_price`)
+VALUES 
+(1, 1, 1000);
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/d6f84281-c4a8-4e53-92f6-0412612b17a6"/>
+    <p>입찰 등록</p>
  </figure>
 </div>
 </details>
@@ -207,9 +332,19 @@
 <details>
 <summary>공구 참여</summary>
 <div>
+
+```
+INSERT INTO `ORDER` 
+(user_idx, gpby_idx, order_address, order_count, order_card_company, card_number, card_cvc, card_y_enddate, card_m_enddate, card_pwd) 
+VALUES 
+('3', '2', '서울특별시 동작구 보라매로', '10', '현대카드','5235-9981-1255-1237', '487', '25', '01', '4567');
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/5c4f8b91-f13d-4a4a-9292-56297c75d064"/>
+    <p>주문정보 작성하여 공구 참여</p>
  </figure>
 </div>
 </details>
@@ -217,12 +352,115 @@
 <details>
 <summary>구매자 정보 조회</summary>
 <div>
+
+```
+SELECT U.user_name, U.user_email, O.order_address, O.order_count, P.product_idx, product_name
+FROM COMPANY_INFO CI JOIN PRODUCT P ON CI.com_info_idx = P.company_idx
+JOIN BID B ON P.product_idx = B.product_idx
+JOIN `ORDER` O ON B.gpby_idx = O.gpby_idx
+JOIN USER U ON O.user_idx = U.user_idx
+JOIN GROUP_BUY GB ON GB.gpby_idx = B.gpby_idx 
+WHERE B.bid_select = true and  GB.gpby_status = "입찰 완료" and CI.com_info_idx = 4;
+
+```
+
 <figure align="center"> 
-  <img src="z"/>
-    <p>~~~ 조회</p>
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/e789e43c-5105-4989-943f-0655a6b29c3d"/>
+    <p>주문 완료한 구매자들의 정보를 조회</p>
  </figure>
 </div>
 </details>
 
+<details>
+<summary>결제</summary>
+<div>
+
+```
+SELECT
+order_idx, user_idx, order_count, order_card_company, card_number, card_cvc, card_y_enddate, card_m_enddate, card_pwd
+FROM `ORDER` 
+WHERE order_idx=2;
+
+UPDATE `ORDER`
+SET order_status="완료"
+WHERE order_idx=2;
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/26eea8c1-0507-426a-8cca-380cba43108a"/>
+    <p>주문 정보에 등록된 정보로 결제 처리</p>
+ </figure>
+</div>
+</details>
+
+<details>
+<summary>관심 공구 등록</summary>
+<div>
+
+```
+INSERT INTO FAVORITES
+(gpby_idx, user_idx)
+VALUES
+(1,1),(1,3),(1,5);
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/ad2612da-a531-408b-addc-03ede3447636"/>
+    <p>공구 관심 등록</p>
+ </figure>
+</div>
+</details>
+
+<details>
+<summary>Q 등록</summary>
+<div>
+
+```
+INSERT INTO QnA
+(user_idx,product_idx,qna_title,qna_content)
+values
+(2,6, '불량제품', '불량품인데 환불 되나요?');
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/ec798102-c5d1-4e12-998d-7e600da20224"/>
+    <p>질문 등록</p>
+ </figure>
+</div>
+</details>
+
+<details>
+<summary>A 등록</summary>
+<div>
+
+```
+UPDATE QnA SET qna_answer = "불가능 합니다."
+WHERE product_idx = 5 AND user_idx = 1;
+UPDATE QnA SET qna_answer_date = current_time()
+WHERE product_idx = 5 AND user_idx = 1;
+
+```
+
+<figure align="center"> 
+
+  <img src="https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/3e46032b-e9c1-4ae9-9e4c-ada2df08f0f0"/>
+    <p>답변 등록</p>
+ </figure>
+</div>
+</details>
+
+### 성능 개선
+
+- INDEX
+  ![image](https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/167496262/0282e672-5b99-4ab9-b3dd-0cf9513a693a)
 
 
+- SP
+![image](https://github.com/beyond-sw-camp/be06-1st-4TREES-0909/assets/82444759/90a274f9-2de6-40de-a7cf-856f6b901e52)
